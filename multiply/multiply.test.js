@@ -9,6 +9,24 @@ describe('multiply', () => {
         const actualResult = multiply(3, 2);
 
         expect(actualResult).toBe(expectedResult)
+
+        expect ({a: 1}).toEqual({a: 1})
+
+        expect([1,2,3]).toHaveLength(3)
+
+        expect([1,2,3]).not.toContain(10)
+
+        expect(undefined).toBeUndefined()
+
+        expect(null).toBeNull()
+
+        expect(null).toBeFalsy()
+
+        expect(actualResult)
+
+        expect(actualResult).toBeDefined()
+
+        expect(actualResult).toBeTruthy()
     });
 
     it('sollte eine multiplizierte negative Zahl sein', () => {
